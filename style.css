@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 6.75rem;
+  border-bottom: rgb(231, 226, 226) solid 1px;
 }
 
 .header-lt,
@@ -59,7 +62,7 @@ header {
   position: relative;
 }
 
-.notification {
+.notif_item {
   position: absolute;
   background: limegreen;
   margin: 0 !important;
@@ -73,6 +76,53 @@ header {
   color: white;
   border-radius: 50%;
   text-align: center;
+}
+
+/* Main body */
+.main_body {
+  display: flex;
+}
+
+/* Sidebar section */
+.sidebar_menu {
+  flex-basis: 23%;
+}
+
+.side_items,
+.sidebar_menu h4 {
+  margin: 0 2rem;
+}
+
+.sidebar_menu div {
+  padding-top: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: solid rgb(231, 226, 226) 1px;
+  border-right: solid rgb(231, 226, 226) 1px;
+}
+
+.mini_sidebar {
+  padding: 1rem 0 !important;
+}
+
+.mini_sidebar h4 {
+  color: limegreen;
+}
+
+.side_items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.side_items li span {
+  color: rgb(172, 166, 166);
+  font-size: small;
+  font-weight: 200;
+}
+/* Books section */
+.books {
+  flex-basis: 77%;
 }
 
 /* icons and logos */
@@ -89,6 +139,18 @@ header {
   display: inline-block;
   height: 3rem;
   width: 3rem;
+}
+
+.notif_circle {
+  border-radius: 50%;
+  font-size: small;
+  width: 1.35rem;
+  height: 1.25rem;
+  padding: 0.1rem;
+  background: limegreen;
+  color: whitesmoke !important;
+  line-height: normal;
+  text-align: center;
 }
 
 .search_logo {
