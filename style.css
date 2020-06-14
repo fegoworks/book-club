@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* header section */
+header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.75rem;
+}
+
+.header-lt,
+.header-rt {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.header-lt :nth-child(1),
+.header-lt :nth-child(2) {
+  margin: 5px;
+}
+
+.header-lt :nth-child(2) p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgb(172, 166, 166);
+}
+
+.header-md {
+  display: flex;
+  align-items: center;
+}
+
+.header-md :nth-child(2) {
+  padding: 0.6rem;
+  background: whitesmoke;
+  border: solid rgb(231, 226, 226) 1px;
+  border-left: none;
+}
+
+.header-md input[type='search'] {
+  width: 30rem;
+  padding: 0.65rem;
+  border: solid rgb(231, 226, 226) 1px;
+}
+
+.header-rt :nth-child(1),
+.header-rt :nth-child(2) {
+  margin: 20px;
+}
+
+.notif_wrapper {
+  position: relative;
+}
+
+.notification {
+  position: absolute;
+  background: limegreen;
+  margin: 0 !important;
+  bottom: 0.5rem;
+  left: 0.4rem;
+  padding: 0.25rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  line-height: 0.85rem;
+  font-size: small;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* icons and logos */
+.circle_avatar {
+  background: black;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+.small_avatar {
+  border-radius: 50%;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+}
+
+.search_logo {
+  height: 1.2rem;
+  border: black solid 1px;
+}
+
+.fa-swatchbook {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.header-rt .fa-swatchbook {
+  color: black;
+}
+
+.fa-bell {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.fa-search {
+  font-size: 1rem;
+  cursor: pointer;
+}
