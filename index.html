@@ -2,151 +2,143 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quidax Book Club</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Header and NavBar -->
-    <header>
-      <section class="header-lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quidax Book Club</title>
+  <link rel="stylesheet" type="text/css"
+    href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header and NavBar -->
+  <header>
+    <section class="header-lt">
+      <div class="d_flex">
+        <div class="hamburger">
+          <div class="_line"></div>
+          <div class="line"></div>
+          <div class="_line"></div>
+        </div>
         <div class="circle_avatar">
           <i class="fas fa-swatchbook"></i>
         </div>
-        <div>
-          <h3>Quidax Book Club</h3>
-          <p>Admin</p>
-        </div>
+      </div>
+      <div class="home">
+        <h3>Quidax Book Club</h3>
+        <p>Admin</p>
+      </div>
+    </section>
+    <section class="header-md">
+      <input type="search" name="" id="search" placeholder="Search books, genres, authors, etc." />
+      <i class="fas fa-search"></i>
+    </section>
+    <section class="header-rt">
+      <i class="fas fa-swatchbook"></i>
+      <div>
+        <i class="notif_wrapper far fa-bell">
+          <span class="notif_item">3</span>
+        </i>
+      </div>
+      <div>
+        <img class="small_avatar" src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg"
+          alt="" />
+      </div>
+    </section>
+  </header>
+  <!-- Main Body -->
+  <section class="main_body">
+    <!-- Sidebar -->
+    <aside class="sidebar_menu">
+      <div class="mini_sidebar">
+        <h4>Home</h4>
+        <ul class="side_items">
+          <li>
+            <p>Profile</p>
+          </li>
+          <li>
+            <p>Notifications</p>
+            <span class="notif_circle">3</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="side_items">
+          <li>
+            <p>Books</p>
+            <span>273</span>
+          </li>
+          <li>
+            <p>Genres</p>
+            <span>42</span>
+          </li>
+          <li>
+            <p>Authors</p>
+            <span>106</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>My Books</h4>
+        <ul class="side_items">
+          <li>
+            <p>Queued</p>
+            <span>3</span>
+          </li>
+          <li>
+            <p>Currently Borrowed</p>
+            <span>0</span>
+          </li>
+          <li>
+            <p>Favourites</p>
+            <span>19</span>
+          </li>
+          <li>
+            <p>History</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admin</h4>
+        <ul class="side_items">
+          <li>
+            <p>Book Requests</p>
+            <span class="notif_circle">3</span>
+          </li>
+          <li>
+            <p>Members</p>
+          </li>
+          <li>
+            <p>Library Setting</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="books_section">
+      <!-- Carousel -->
+      <section class="carousel_container">
+        <h4>FEATURED BOOKS</h4>
+        <div id="carousel" class="carousel"> </div>
       </section>
-      <section class="header-md">
-        <input
-          type="search"
-          name=""
-          id="search"
-          placeholder="Search books, genres, authors, etc."
-        />
-        <i class="fas fa-search"></i>
+      <section class="recently_added">
+        <h4>RECENTLY ADDED</h4>
+        <section id="recently_added" class="books_grid"></section>
       </section>
-      <section class="header-rt">
-        <i class="fas fa-swatchbook"></i>
-        <div>
-          <i class="notif_wrapper far fa-bell">
-            <span class="notif_item">3</span>
-          </i>
-        </div>
-        <div>
-          <img
-            class="small_avatar"
-            src="https://res.cloudinary.com/fego/image/upload/v1566565664/hng/fegggie_scbhf4.jpg"
-            alt=""
-          />
-        </div>
-      </section>
-    </header>
-    <!-- Main Body -->
-    <section class="main_body">
-      <!-- Sidebar -->
-      <aside class="sidebar_menu">
-        <div class="mini_sidebar">
-          <h4>Home</h4>
-          <ul class="side_items">
-            <li>
-              <p>Profile</p>
-            </li>
-            <li>
-              <p>Notifications</p>
-              <span class="notif_circle">3</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul class="side_items">
-            <li>
-              <p>Books</p>
-              <span>273</span>
-            </li>
-            <li>
-              <p>Genres</p>
-              <span>42</span>
-            </li>
-            <li>
-              <p>Authors</p>
-              <span>106</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>My Books</h4>
-          <ul class="side_items">
-            <li>
-              <p>Queued</p>
-              <span>3</span>
-            </li>
-            <li>
-              <p>Currently Borrowed</p>
-              <span>0</span>
-            </li>
-            <li>
-              <p>Favourites</p>
-              <span>19</span>
-            </li>
-            <li>
-              <p>History</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4>Admin</h4>
-          <ul class="side_items">
-            <li>
-              <p>Book Requests</p>
-              <span class="notif_circle">3</span>
-            </li>
-            <li>
-              <p>Members</p>
-            </li>
-            <li>
-              <p>Library Setting</p>
-            </li>
-          </ul>
-        </div>
-      </aside>
-      <section class="books_section">
-        <!-- Carousel -->
-        <section class="carousel_container">
-          <h4>FEATURED BOOKS</h4>
-          <div class="carousel">
-            <div class="carousel_item">
-              <img src="" alt="" />
-              <div class="book_details"></div>
-            </div>
-            <div class="carousel_item">
-              <img src="" alt="" />
-              <div class="book_details"></div>
-            </div>
-            <div class="carousel_item">
-              <img src="" alt="" />
-              <div class="book_details"></div>
-            </div>
-            <div class="carousel_item">
-              <img src="" alt="" />
-              <div class="book_details"></div>
-            </div>
-            <div class="carousel_item">
-              <img src="" alt="" />
-              <div class="book_details"></div>
-            </div>
-          </div>
-        </section>
+      <section class="all_books">
+        <h4>ALL BOOKS</h4>
+        <section id="all_books" class="books_grid"></section>
       </section>
     </section>
-  </body>
+  </section>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/bookCarousel.js"></script>
+<script src="./js/bookGrids.js"></script>
+
 </html>
