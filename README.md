@@ -34,7 +34,8 @@ To run this APP locally simply follow the instructions below:
 
 You need to have or install the following:
 
-1. Chrome/Firefox/Safari Browser
+1. Internet connection (because the book covers, icons and fonts have their source links hosted)
+2. Chrome/Firefox/Safari Browser
 
 #### Installation<a name="installation"></a>
 
@@ -42,6 +43,7 @@ You need to have or install the following:
   ```
   git clone https://github.com/fegoworks/book-club.git
   ```
+
 - navigate to app folder
 - start app
   ```
@@ -54,7 +56,7 @@ You need to have or install the following:
    - The responsive search bar, only meant to be available on mobile screens
    - The sidebar on mobile screen is not as responsive yet, I hope to have that working soonest. For now, the hamburger menu when clicked simply pulls the sidebar out, the transition effect is missing at the time of writing this and I am also yet to add a close button. Again it's time kicking my ass😟
    - The seachbar's auto complete feature - this is still in the works and will be ready if delivery time is extended
-
+   - Also, there were icons in the figma mockup that I couldn't find, the book logo for instance, so I had to improvise
 
 
 ## Author
