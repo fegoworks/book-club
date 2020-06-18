@@ -61,7 +61,6 @@ header {
 .header-rt {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .header-lt :nth-child(1),
@@ -190,9 +189,6 @@ input[type='search']:focus {
   border-bottom: solid rgb(231, 226, 226) 1px;
 }
 
-.carousel {
-}
-
 .carousel-cell {
   width: 22%;
   height: 21rem;
@@ -276,12 +272,18 @@ input[type='search']:focus {
   border-right: rgb(202, 196, 196) solid 1px !important;
 }
 
+/* Buttons */
 .btn {
   display: none;
 }
 
 .hamburger {
   display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 /* Books grid*/
 
@@ -349,6 +351,7 @@ input[type='search']:focus {
   border-radius: 50%;
   display: inline-block;
   padding: 0.75rem;
+  cursor: pointer;
 }
 
 .small_avatar {
@@ -356,6 +359,7 @@ input[type='search']:focus {
   display: inline-block;
   height: 3rem;
   width: 3rem;
+  cursor: pointer;
 }
 
 .notif_circle {
@@ -374,6 +378,7 @@ input[type='search']:focus {
 .fa-swatchbook {
   color: white;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .header-rt .fa-swatchbook {
@@ -384,6 +389,7 @@ input[type='search']:focus {
   font-size: 1.1rem;
   padding: 0;
   margin: 0 !important;
+  cursor: pointer;
 }
 
 .fa-search {
@@ -448,6 +454,19 @@ input[type='search']:focus {
     margin: 5px;
   }
 
+  .slider {
+    position: fixed;
+    background: white;
+    left: 0;
+    width: 18rem;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  header .slider {
+    margin-left: 1rem;
+  }
+
   .home {
     display: none;
   }
@@ -455,7 +474,7 @@ input[type='search']:focus {
   .mobile_search {
     position: absolute;
     top: 0;
-    height: 6.75 rem;
+    height: 6.75rem;
     background: white;
   }
 
@@ -471,10 +490,6 @@ input[type='search']:focus {
   .books_grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.25rem;
-  }
-
-  .sidebar_menu {
-    visibility: hidden;
   }
 
   input[type='search'] {
@@ -513,6 +528,10 @@ input[type='search']:focus {
     width: 45%;
   }
 
+  .carousel-cell > .book_details:hover {
+    opacity: 0;
+  }
+
   .btn {
     display: inline-block;
     position: absolute;
@@ -545,6 +564,8 @@ input[type='search']:focus {
     height: 2.5rem;
     border-radius: 50%;
     margin: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
   }
   .ellipsis:after {
     content: '';

@@ -15,8 +15,8 @@ const populateCarousel = (el, data) => {
           src="${item.imageUrl}"
           alt="${item.title}"
         />
-        <div class="book_details">
-          <button id="close_btn" class="btn">X</button>
+        <div id="book_details" class="book_details">
+          <button id="close_bk" class="btn">X</button>
           <h5 class="${available(item.available)}">${item.available}</h5>
           <h3>${item.title}</h3>
           <div>
