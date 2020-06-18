@@ -1,7 +1,8 @@
 # Quidax Book Club
 
 A dashboard view for the fictional Quidax Book Club web application, exactly as
-detailed in the UI mockups provided using HTML, CSS, vanilla Javascript
+detailed in the UI mockups provided using HTML, CSS, vanilla Javascript. 
+App is live on https://fegoworks.github.io/book-club
 
 # Table of Contents
 
